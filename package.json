@@ -1,0 +1,23 @@
+{
+  "name": "desk-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^15.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReenyeLima/desk-board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReenyeLima/desk-board/issues"
+  },
+  "homepage": "https://github.com/ReenyeLima/desk-board#readme"
+}
