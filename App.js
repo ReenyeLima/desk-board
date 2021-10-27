@@ -1,13 +1,17 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, screen } = require('electron');
 
 function createWindow() {
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+  
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    autoHideMenuBar: true
+    width: width,
+    height: height,
+    transparent: true,
+    frame: false,
+    resizable: false,
   })
 
-  win.loadFile('index.html');
+  win.loadFile('./src/home/index.html');
 }
 
 app.whenReady().then(() => {
