@@ -11,10 +11,10 @@ document.addEventListener("mousemove", e => {
 
 document.addEventListener("mouseup", () => {
   drawing = false
-  context.beginPath();
 });
 document.addEventListener("mousedown", (e) =>  {
   drawing = true
+  context.beginPath();
   draw(e);
 });
 
@@ -24,7 +24,6 @@ const draw = (e) => {
   context.lineWidth = 5;
   context.lineCap = 'round';
 
-  context.beginPath();
   context.lineTo(e.clientX, e.clientY);
   context.stroke();
   context.moveTo(e.clientX, e.clientY);
