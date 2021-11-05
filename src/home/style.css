@@ -6,10 +6,43 @@
   overflow: hidden;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.board {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.panel {
+  position: absolute;
+  z-index: 5;
+  width: 50%;
+  height: 7%;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  background-color: #FFF;
+  left: 1%;
+  top: 1.5%;
+  display: flex;
+  visibility: visible;
+  color: white;
+}
+
+.panel, .panel > * {
+  cursor: pointer;
+}
+
 .cursor {
   width: 16px;
   height: 16px;
   background-image: url('../../assets/pencil.ico');
   background-size: cover;
   position: absolute;
-}
+  z-index: 3;
+} 

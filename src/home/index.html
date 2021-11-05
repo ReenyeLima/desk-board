@@ -9,7 +9,13 @@
 </head>
 <body>
   <div class="cursor"></div>
-  <canvas class="board"></canvas>
+  <div class="container">
+    <canvas class="board"></canvas>
+    <div class="panel">
+      <input id="range-size" type="range" min="1" max="20" step="1" default="5">
+      <input type="color" id="color">
+    </div>
+  </div>
 </body>
 <script src="script.js"></script>
 </html>
