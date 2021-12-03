@@ -11,9 +11,9 @@ var drawing = false;
 var configuring = false;
 
 window.addEventListener("drag", e => {
-  e.preventDefault();
+  e.preventDefault();''
 })
-
+  
 window.addEventListener("dragstart", e => {
   e.preventDefault();
 })
